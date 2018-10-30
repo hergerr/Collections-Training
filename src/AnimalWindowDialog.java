@@ -11,6 +11,16 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+/*
+ *  Program: Operacje na kolekcjach
+ *     Plik: AnimalWindowDialog.java
+ *     
+ *           Dialog umo¿liwiaj¹cy dodawanie/edycje pojedynczego zwierzêcia
+ *           
+ *
+ *    Autor: Tymoteusz Frankiewicz
+ *     Data:  pazdziernik 2018 r.
+ */
 
 public class AnimalWindowDialog extends JDialog implements ActionListener {
 	private static final long serialVersionUID = 1L;

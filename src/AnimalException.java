@@ -1,5 +1,5 @@
 /*
- *  Program: Operacje na obiektach klasy Animal
+ *  Program: Operacje na kolekcjach
  *     Plik: AnimalException.java
  *           definicja wyj¹tku AnimalException
  *

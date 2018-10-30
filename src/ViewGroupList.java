@@ -7,7 +7,20 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
 import javax.swing.table.DefaultTableModel;
-
+/*
+ * 
+ * Program: 	Operacje na kolekcjach
+ * 
+ * Plik:		ViewGroupList.java
+ * 
+ * Autor:		Tymoteusz Frankiewicz
+ *
+ * Data:		pazdziernik 2018
+ * 
+ * Zawiera klasê ViewGroupList, która jest dostosowan¹
+ * tabelk¹ do wyœwietlania grup zwierz¹t
+ * 
+ * */
 class ViewGroupList extends JScrollPane {
 	private static final long serialVersionUID = 1L;
 

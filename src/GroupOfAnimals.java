@@ -19,8 +19,7 @@ import java.util.Vector;
 
 /*
  * 
- * Program: 	Aplikacja okienkowa z GUI, która umo¿liwia zarz¹dzanie grupami 
- * 				obiektów klasy Animal
+ * Program: 	Operacje na kolekcjach
  * 
  * Plik:		GroupOfAnimals.java
  * 
@@ -29,6 +28,7 @@ import java.util.Vector;
  * Data:		pazdziernik 2018
  * 
  * Zawiera klasê GroupOfAnimals i typ wyliczeniowy GroupType
+ * Dodatkowo zaimplementowane funckje do operacji na zbiorach
  * 
  * */
 

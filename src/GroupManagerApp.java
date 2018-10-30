@@ -24,8 +24,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 /*
-* Program: 	Aplikacja okienkowa z GUI, która umorzliwai zarz¹dzanie grupami obiektów
-*			klasy Animal
+* Program: 	Operacje na kolekcjach
 *
 * Plik:		GroupManagerApp.java
 *

@@ -10,10 +10,11 @@ import java.io.ObjectOutputStream;
 import java.io.PrintWriter;
 import java.io.Serializable;
 /*
- *  Program: Operacje na obiektach klasy Animal
+ *  Program: Operacje na kolekcjach
  *     Plik: Animal.java
  *           definicja typu wyliczeniowego Kind
  *           definicja publicznej klasy Animal
+ *           przeci¹¿enie metod klasy Object
  *           
  *           Dodatkowo zosta³a wyposa¿ona w mo¿liwosc serializacji z zapisem do pliku
  *           binarnego

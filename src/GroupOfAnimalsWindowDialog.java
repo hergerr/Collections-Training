@@ -14,6 +14,22 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+/*
+ * 
+ * Program: 	Operacje na kolekcjach
+ * 
+ * Plik:		GroupOfAnimalsWindowDialog.java
+ * 
+ * Autor:		Tymoteusz Frankiewicz
+ *
+ * Data:		pazdziernik 2018
+ * 
+ * Dialog s³u¿¹cy do dodawania  i wykonywania 
+ * innych operacji na zwierzêtach wybranej grupy
+ * 
+ * */
+
+
 public class GroupOfAnimalsWindowDialog extends JDialog implements ActionListener{
 	
 	private static final long serialVersionUID = 1L;
@@ -134,7 +150,7 @@ public class GroupOfAnimalsWindowDialog extends JDialog implements ActionListene
 	public static GroupOfAnimals createNewGroupOfAnimals(GroupManagerApp groupManagerApp) {
 		String newGroupName = JOptionPane.showInputDialog(groupManagerApp, "Podaj nazwe grupy");
 		
-		GroupType newCollectionType = (GroupType) JOptionPane.showInputDialog(null, "", "Title",
+		GroupType newCollectionType = (GroupType) JOptionPane.showInputDialog(null, "", "",
 		        JOptionPane.QUESTION_MESSAGE, null, GroupType.values(),"Regular");
 		GroupOfAnimals newGroup;
 		try {
@@ -240,7 +256,7 @@ public class GroupOfAnimalsWindowDialog extends JDialog implements ActionListene
 				textFieldGroupName.setText(newCollectionName);
 			}
 			if(eventSource == menuChangeCollection) {
-				GroupType newCollectionType = (GroupType) JOptionPane.showInputDialog(null, "", "Title",
+				GroupType newCollectionType = (GroupType) JOptionPane.showInputDialog(null, "", "",
 				        JOptionPane.QUESTION_MESSAGE, null, GroupType.values(),"Regular");
 				group.setType(newCollectionType);
 				textFieldCollectionKind.setText(newCollectionType.getTypeName());
