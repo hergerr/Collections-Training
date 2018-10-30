@@ -293,15 +293,12 @@ public class GroupOfAnimals implements Iterable<Animal>, Serializable{
         }
         GroupOfAnimals group = new GroupOfAnimals(type, name);
 
-        //##############################################################################
-        //#                                                                            #
-        //# Tu nale¿y dopisaæ instrukcje które wyznacz¹ czêœæ wspóln¹ dwóch            #
-        //#      grup ¿ród³owych                                                       #
-        //#   Do grupy nale¿y dodaæ te osoby, które nale¿¹ zarówno do grupy pierwszej  #
-        //#    jak i do grupy drugiej;                                                 #
-        //#                                                                            #
-        //##############################################################################
-
+        for(Animal a: g1.collection) {
+        	if(g2.collection.contains(a)) {
+        		group.collection.add(a);
+        	}
+        }
+     
         return group;
     }
 
@@ -315,14 +312,13 @@ public class GroupOfAnimals implements Iterable<Animal>, Serializable{
         }
         GroupOfAnimals group = new GroupOfAnimals(type, name);
 
-        //##############################################################################
-        //#                                                                            #
-        //# Tu nale¿y dopisaæ instrukcje które wyznacz¹ ró¿nicê dwóch                  #
-        //#      grup ¿ród³owych                                                       #
-        //#   Do grupy nale¿y dodaæ te osoby, które nale¿¹ do grupy pierwszej          #
-        //#     i nie nale¿¹ do grupy drugiej;                                         #
-        //#                                                                            #
-        //##############################################################################
+        for(Animal a: g1.collection) {
+        	if(g2.collection.contains(a)) {
+        		continue;
+        	} else {
+        		group.collection.add(a);
+        	}
+        }
 
         return group;
     }
@@ -338,15 +334,23 @@ public class GroupOfAnimals implements Iterable<Animal>, Serializable{
         }
 
         GroupOfAnimals group = new GroupOfAnimals(type, name);
+        
+        for(Animal a: g1.collection) {
+        	if(g2.collection.contains(a)) {
+        		continue;
+        	} else {
+        		group.collection.add(a);
+        	}
+        }
 
-        //##############################################################################
-        //#                                                                            #
-        //# Tu nale¿y dopisaæ instrukcje które wyznacz¹ ró¿nicê symetryczn¹ dwóch      #
-        //#      grup ¿ród³owych                                                       #
-        //#   Do grupy nale¿y dodaæ te osoby, które nale¿¹ tylko do grupy pierwszej    #
-        //#     lub nale¿¹ tylko do grupy drugiej;                                     #
-        //#                                                                            #
-        //##############################################################################
+        for(Animal a: g2.collection) {
+        	if(g1.collection.contains(a)) {
+        		continue;
+        	} else {
+        		group.collection.add(a);
+        	}
+        }
+        
 
         return group;
     }
